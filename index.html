@@ -267,7 +267,7 @@
             position: relative;
         }
 
-        .thick-line{
+        .thick-line {
             border: 0;
             /* Remove default border */
             height: 1.4px;
@@ -315,16 +315,6 @@
             margin-right: 50;
             margin-left: 100px;
             padding: 0;
-
-        }
-        .fourthSection{
-            margin-left: 84px;
-            margin-top: -20px;
-            height:80vh;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
 
         }
     </style>
@@ -448,15 +438,106 @@
             </div>
 
         </section>
-       <hr class="thick-line">  <!--Defining a divider line between the third and fourt section--> 
-        <section class="fourthSection">
-            <!-- The left section of fourthSection -->
-            <progress value="80" max="100"></progress>
-            <div class="leftsection">
+        <hr class="thick-line"> <!--Defining a divider line between the third and fourt section-->
+        <section class="skills-section">
+            <div class="skills-grid">
+                <!-- First icon and progress bar -->
+                <div class="skill-item">
+                    <img src="c.png" class="icon" alt="C logo">
+                    <progress value="90" max="100"></progress>
+                </div>
+                <!-- Second icon and progress bar -->
+                <div class="skill-item">
+                    <img src="cpp.png" class="icon" alt="C++ logo">
+                    <progress value="50" max="100"></progress>
+                </div>
+                <!-- Third icon and progress bar -->
+                <div class="skill-item">
+                    <img src="python.png" class="icon" alt="Python logo">
+                    <progress value="70" max="100"></progress>
+                </div>
+                <!-- Fourth icon and progress bar -->
+                <div class="skill-item">
+                    <img src="css.png" class="icon" alt="css logo">
+                    <progress value="60" max="100"></progress>
+                </div>
+                <!-- Fifth icon and progress bar -->
+                <div class="skill-item">
+                    <img src="html.png" class="icon" alt="HTML logo">
+                    <progress value="85" max="100"></progress>
+                </div>
 
             </div>
-
         </section>
+        <hr>
+        <section class="project-section">
+            <div></div>
+        </section>
+        <style>
+            /* Basic layout for the section */
+            .skills-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 10vh;
+                background-color: #0a0b27;
+                /* Adjust background color to match */
+            }
+
+            /* Grid layout for the icons and progress bars */
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                /* 3 items per row */
+                gap: 40px;
+                /* Space between the items */
+                max-width: 80%;
+                /* Adjust width based on the available space */
+            }
+
+            /* Styling for each skill item */
+            .skill-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* Icon styling */
+            .icon {
+                display: block;
+                width: 80px;
+                /* Uniform size for all icons */
+                height: 80px;
+                /* Set a fixed height to avoid misalignment */
+                object-fit: contain;
+                /* Ensures the aspect ratio is maintained */
+                margin: 0 auto 10px;
+                /* Centers the icon and adds space between the icon and the progress bar */
+            }
+
+            /* Progress bar styling */
+            progress {
+                width: 150px;
+                /* Adjust width of progress bar */
+                height: 12px;
+                border-radius: 10px;
+                -webkit-appearance: none;
+                appearance: none;
+            }
+
+            progress::-webkit-progress-bar {
+                background-color: #e6e6e6;
+                border-radius: 10px;
+            }
+
+            progress::-webkit-progress-value {
+                background-color: #007bff;
+                /* Progress bar color */
+                border-radius: 10px;
+            }
+        </style>
+
     </main>
     <footer>
         <div class="footer">
