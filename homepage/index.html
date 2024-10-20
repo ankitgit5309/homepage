@@ -1,0 +1,64 @@
+<!-- Main page: An educational website about Dogs and how to treat them as pets. -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Guide for Dog's parenthood| Home</title>
+    <script>
+    // Play a clip of a guinea Dog squeaking when a user clicks the Dog button in the nav-bar.
+    // Audio code learned about here: https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
+    function play_sound(url) {
+      new Audio(url).play();
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Navigation bar care for dogs -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><b>Dog's parenthood</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="behaviour.html">Dog Behavior</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="care.html">Dog Care</a>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+        </ul>
+        <!-- Button/audio clip of guinea Dog squeaking used in the nav-bar -->
+        <button onclick="play_sound('sound/dog-barking.mp3')" type="button" class="btn btn-outline-info"><img src="images/dog face.jpg" alt="Image of a dog face" width="30"></button>
+      </div>
+    </nav>
+
+    <!-- Homepage content -->
+    <h1 style= "margin-left: 200pt;">Welcome to care for dogs!</h1>
+    <h4 style= "margin-left: 200pt;">An educational jumping-off point for would-be floofball (Dog) owners</h4>
+    <img class ="indent_img" src="images/brown dog.jpg" alt="a playful dog" width="615">
+    <h6 style="margin-left: 200pt; margin-top: 15px"><em>"Let's play with me."</em></h6>
+    <h4 class="indent" style="margin-top: 25px; margin-bottom: 20px;">About Dogs for new Owners</h4>
+    <hr class="solid">
+    <p class="indent" style="padding-bottom: 30px">
+      If you're here, you've probably already gotten yourself a Dog
+      or you're thinking about it.<br><br>
+
+      Dogs can be awesome, loving, loyal and terrifically fun pets.
+      But they require care and responsibility. This website is meant to
+      get you <em>started</em> on the right path to raise a dog, but by no means is it comprehensive.<br><br>
+
+      Here you'll learn about the generalities of dog, good caretaking practices,
+      and get access to links to resources from very experienced dog owners that can tell you
+      more about how to be a stellar pet owner. See the links in the navigation bar at the top of the page to
+      get started learning!
+    </p>
+  </body>
+</html>

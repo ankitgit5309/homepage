@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+           //add code to check answers
+           document.addEventListener('DOMContentLoaded',function(){
+
+            // when the answer is correct button will turn green
+            let correct = document.querySelector('.correct');
+            correct.addEventListener('click',function(){
+                correct.style.backgroundColor ="green";
+                 document.querySelector("#answer1").innerHTML="Correct";
+            });
+            //when any incorrect answer is clicked , button turns red
+            let incorrect = document.querySelectorAll(".incorrect");
+            for(let i = 0 ; i<incorrect.length ; i++){
+                incorrect[i].addEventListener("click",function(){
+                    incorrect[i].style.backgroundColor="red";
+                    document.querySelector("#answer1").innerHTML = "Inorrect!";
+                });
+            }
+            // check free response submission
+            document.querySelector("#check").addEventListener
+            ("click",function(){
+               let input = document.querySelector("input");
+               if(input.value.toLowerCase() == "saudiarabia"){
+               input.style.backgroundColour = "green";
+               document.querySelector("#answer2").innerHTML = "Correct!";}
+             else{
+                input.style.backgroundColor = "red";
+                document.querySelector("#answer2").innerHTML = "Incorrect!";
+
+            }
+        });
+
+        })
+
+        </script>
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the approximate male to female ratio in India</h3>
+                <button class = "incorrect" type ="text">945:1000</button>
+                <button class = "incorrect" type ="text">1000:1020</button>
+                <button class = "incorrect" type ="text">1000:900</button>
+                <button class = "incorrect" type ="text">980:1000</button>
+                <button class = "correct" type ="text">1000:943</button>
+                <p id="answer1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>In which country it is illegal for women to ride a car?</h3>
+                <form>
+                    <input type="text" placeholder="country">
+                    <button id="check">Check answer</button>
+                    <p id="answer"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -534,21 +534,72 @@
                 border-radius: 10px;
             }
         </style>
-        <section class="project-section">
-            <div class=""></div>
-
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Project 1: Portfolio Website</h3>
+                    <p>A personal portfolio website to showcase my skills and projects. Built using HTML, CSS, and
+                        JavaScript.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/yourusername/portfolio-website" target="_blank">GitHub Repo</a> |
+                    <a href="https://your-portfolio-link.com" target="_blank">Live Demo</a>
+                </div>
+                <div class="project">
+                    <h3>Project 2: IoT Smart Home System</h3>
+                    <p>An IoT-based home automation system that allows users to control devices remotely. Developed
+                        during my internship.</p>
+                    <p><strong>Technologies:</strong> Python, Arduino, IoT</p>
+                    <a href="https://github.com/yourusername/smart-home" target="_blank">GitHub Repo</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
         </section>
         <style>
-            .project-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 10vh;
-        background-color: #0a0b27;
-        /* Adjust background color to match */
-        }
+            #projects {
+                padding: 40px;
+                background-color: #f4f4f4;
+            }
+
+            #projects h2 {
+                text-align: center;
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            .project-list {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .project {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .project h3 {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+
+            .project p {
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+
+            .project a {
+                color: #0073e6;
+                text-decoration: none;
+            }
+
+            .project a:hover {
+                text-decoration: underline;
+            }
         </style>
-        
+
     </main>
     <footer>
         <div class="footer">
