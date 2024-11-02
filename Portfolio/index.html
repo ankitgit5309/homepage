@@ -261,66 +261,7 @@
             /* Optional: Change hover color if you want */
         }
 
-        .thirdSection {
-            /*background:#10103a;*/
-            margin-left: 84px;
-            /*Moves the content of third section to match the left margin*/
-            margin-top: -20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-        }
-
-        .thick-line {
-            border: 0;
-            /* Remove default border */
-            height: 1.4px;
-            /* Increase the thickness of the line */
-            background-color: white;
-            /* Color of the line */
-            margin: 60px 80px;
-            /* Adjust spacing around the line */
-            width: 90%;
-            /* Adjust the width of the line */
-        }
-
-        .rightSection {
-            align-self: flex-start;
-            margin: 0;
-            padding-top: 0;
-        }
-
-        .leftsection {
-            width: 50%;
-            font-size: 2.5rem;
-            margin: 70px 0;
-
-        }
-
-        .description {
-            font: 18px;
-            line-height: 1.6;
-            margin-top: -194px;
-            padding-top: -20px;
-            margin-left: -465px;
-        }
-
-        .leftSection img {
-            width: 350px;
-            height: auto;
-            margin: 10px 0;
-            margin-left: 50;
-        }
-        .thirdSection h1 {
-            font-size: 1.9rem;
-            text-decoration: underline;
-            margin: auto;
-            margin-right: 50;
-            margin-left: 100px;
-            padding: 0;
-
-        }
+       
         @media (max-width: 1200px) {
                 .skills-grid {
                     grid-template-columns: repeat(3, 1fr);
@@ -642,41 +583,103 @@
             margin: 10px 0;
             margin-left: 50;
         }
-        @media (max-width: 1200px) {
-                .skills-grid {
-                    grid-template-columns: repeat(3, 1fr);
-                    /* 3 items per row */
-                }
+       
 
-                .icon {
-                    width: 60px;
-                    /* Smaller icons */
-                    height: 60px;
-                }
+</style>
+        <section class="thirdSection">
+            <div class="leftSection">
+                <img src="jerry.png" alt="Ankit's image">
+            </div>
+            <div class="rightSection">
+                <h1> About Me </h1>
+            </div>
+            <div class="description">
+                <p><strong>Name:</strong> Ankit Raj</p>
+                <p><strong>Age:</strong> 21</p>
+                <p><strong>Conatct:</strong> ankitraj5309@gmail.com</p>
+                <p><strong>Profession:</strong> Web Developer</p>
+                <p><strong>Description:</strong> I am a passionate web developer with a love for creating dynamic and
+                    interactive web pages. I enjoy coding, learning new technologies, and improving my skills.</p>
+            </div>
 
-                progress {
-                    width: 120px;
-                    /* Smaller progress bar */
-                }
-            }
+        </section>
+        <style> 
+        .thirdSection {
+            /*background:#10103a;*/
+            margin-left: 84px;
+            /*Moves the content of third section to match the left margin*/
+            margin-top: -20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
 
+        .thick-line {
+            border: 0;
+            /* Remove default border */
+            height: 1.4px;
+            /* Increase the thickness of the line */
+            background-color: white;
+            /* Color of the line */
+            margin: 60px 80px;
+            /* Adjust spacing around the line */
+            width: 90%;
+            /* Adjust the width of the line */
+        }
+
+        .rightSection {
+            align-self: flex-start;
+            margin: 0;
+            padding-top: 0;
+        }
+
+        .leftsection {
+            width: 50%;
+            font-size: 2.5rem;
+            margin: 70px 0;
+
+        }
+
+        .description {
+            font: 18px;
+            line-height: 1.6;
+            margin-top: -194px;
+            padding-top: -20px;
+            margin-left: -465px;
+        }
+
+        .leftSection img {
+            width: 350px;
+            height: auto;
+            margin: 10px 0;
+            margin-left: 50;
+        }
+        .thirdSection h1 {
+            font-size: 1.9rem;
+            text-decoration: underline;
+            margin: auto;
+            margin-right: 50;
+            margin-left: 100px;
+            padding: 0;
+
+        }
             @media (max-width: 768px) {
-                .skills-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                    /* 2 items per row */
-                    gap: 20px;
-                    /* Reduce space between items */
+                .thirdsection {
+                    flex-direction: column(2, 1fr);
+                    
+                    align-items: center;
+                    
                 }
 
-                .icon {
-                    width: 50px;
-                    /* Even smaller icons */
-                    height: 50px;
+                .leftsection, .rightsection {
+                    max-width: 100%;
+                    margin: 10px 0;
                 }
 
-                progress {
-                    width: 100px;
-                    /* Smaller progress bar */
+                .thirdsection h1 {
+                    text-align: center;
+                    
                 }
             }
 
@@ -700,24 +703,8 @@
                 }
             }
 
-</style>
-        <section class="thirdSection">
-            <div class="leftSection">
-                <img src="jerry.png" alt="Ankit's image">
-            </div>
-            <div class="rightSection">
-                <h1> About Me </h1>
-            </div>
-            <div class="description">
-                <p><strong>Name:</strong> Ankit Raj</p>
-                <p><strong>Age:</strong> 21</p>
-                <p><strong>Conatct:</strong> ankitraj5309@gmail.com</p>
-                <p><strong>Profession:</strong> Web Developer</p>
-                <p><strong>Description:</strong> I am a passionate web developer with a love for creating dynamic and
-                    interactive web pages. I enjoy coding, learning new technologies, and improving my skills.</p>
-            </div>
+        </style>
 
-        </section>
         <hr class="thick-line"> <!--Defining a divider line between the third and fourt section-->
         <section class="skills-section">
             <h2>Skills : </h2>
