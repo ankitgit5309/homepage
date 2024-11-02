@@ -90,7 +90,6 @@
             </div>
         </nav>
     </header>
-
     <main>
         <section class="firstSection">
             <div class="leftSection">
@@ -117,110 +116,55 @@
             .firstSection {
                 display: flex;
                 justify-content: space-around;
-                align-items: center;
                 flex-wrap: wrap;
-                margin: 50px 0;
-                padding: 20px;
+                /*flex-grow: flex;*/
+                margin: 110px 0;
             }
 
-            .leftSection,
             .rightSection {
-                flex: 1 1 300px;
-                /* Allows resizing */
-                max-width: 600px;
-                /* Limits max width */
-                margin: 20px;
-                text-align: center;
-                /* Centers text on smaller screens */
+                width: 50%;
+                font-size: 2.5rem;
+                margin: 70px 0;
+            }
+
+            .firstSection>div {
+                width: 30%;
             }
 
             .leftSection {
-                font-size: 2rem;
+                width: 50%;
+                font-size: 2.5rem;
+                margin: 70px 0;
+
             }
 
             .leftSection .buttons {
-                display: flex;
-                gap: 15px;
-                flex-wrap: wrap;
-                justify-content: center;
-                /* Centers buttons */
-                margin-top: 20px;
+                padding: 23px;
+
             }
 
             .leftSection .btn {
-                padding: 12px 20px;
+                padding: 12px;
                 background: #1e2167;
                 color: white;
                 border: 2px solid white;
                 border-radius: 6px;
-                font-size: 18px;
+                font-size: 20px;
                 cursor: pointer;
-                transition: background 0.3s;
-            }
-
-            .leftSection .btn:hover {
-                background: #333c94;
-                /* Darker background on hover */
             }
 
             .rightSection img {
-                width: 100%;
-                height: auto;
-                max-width: 400px;
-                /* Limits image size */
-                border-radius: 10px;
-                /* Optional: rounded corners */
+                width: 80%;
+                margin: 10px 0;
+
             }
 
-            .purple,
-            #element {
+            .purple {
                 color: rgb(158, 87, 225);
             }
 
-            /* Responsive Design */
-            @media (max-width: 768px) {
-                .firstSection {
-                    flex-direction: column;
-                    /* Stacks sections vertically */
-                    align-items: center;
-                    /* Centers content */
-                    text-align: center;
-                }
-
-                .leftSection,
-                .rightSection {
-                    max-width: 100%;
-                    /* Full width on smaller screens */
-                }
-
-                .leftSection {
-                    font-size: 1.8rem;
-                    /* Slightly smaller font size */
-                }
-
-                .leftSection .btn {
-                    font-size: 16px;
-                    /* Smaller buttons */
-                }
-            }
-
-            @media (max-width: 480px) {
-                .leftSection {
-                    font-size: 1.5rem;
-                    /* Smaller font size on extra small screens */
-                }
-
-                .leftSection .btn {
-                    font-size: 14px;
-                    /* Adjust button font size */
-                    padding: 10px 15px;
-                    /* Smaller padding */
-                }
-
-                .rightSection img {
-                    max-width: 300px;
-                    /* Smaller max-width for image */
-                }
+            #element {
+                color: rgb(158, 87, 225);
             }
         </style>
         <hr>
@@ -670,7 +614,9 @@
             .project-list {
                 display: flex;
                 flex-direction: column;
+                /* Default to vertical stacking */
                 gap: 20px;
+                /* Space between projects */
             }
 
             .project {
@@ -699,61 +645,59 @@
                 text-decoration: underline;
             }
 
-            @media (max-width: 1200px) {
-                .skills-grid {
-                    grid-template-columns: repeat(3, 1fr);
-                    /* 3 items per row */
+            /* Responsive Design */
+            @media (min-width: 768px) {
+                .project-list {
+                    flex-direction: row;
+                    /* Switch to horizontal layout on larger screens */
+                    flex-wrap: wrap;
+                    /* Allow projects to wrap if needed */
                 }
 
-                .icon {
-                    width: 60px;
-                    /* Smaller icons */
-                    height: 60px;
-                }
-
-                progress {
-                    width: 120px;
-                    /* Smaller progress bar */
+                .project {
+                    flex: 1 1 calc(33.333% - 20px);
+                    /* Three projects per row with space */
+                    margin: 10px;
+                    /* Margin for space between projects */
                 }
             }
 
             @media (max-width: 768px) {
-                .skills-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                    /* 2 items per row */
-                    gap: 20px;
-                    /* Reduce space between items */
+                .project h3 {
+                    font-size: 1.25em;
+                    /* Slightly smaller heading on medium screens */
                 }
 
-                .icon {
-                    width: 50px;
-                    /* Even smaller icons */
-                    height: 50px;
-                }
-
-                progress {
-                    width: 100px;
-                    /* Smaller progress bar */
+                .project p {
+                    font-size: 0.9em;
+                    /* Slightly smaller text on medium screens */
                 }
             }
 
             @media (max-width: 480px) {
-                .skills-grid {
-                    grid-template-columns: 1fr;
-                    /* 1 item per row */
-                    gap: 10px;
-                    /* Minimal space between items */
+                #projects h2 {
+                    font-size: 1.5em;
+                    /* Smaller heading on small screens */
                 }
 
-                .icon {
-                    width: 40px;
-                    /* Smallest icons */
-                    height: 40px;
+                .project {
+                    padding: 15px;
+                    /* Less padding on small screens */
                 }
 
-                progress {
-                    width: 80px;
-                    /* Smallest progress bar */
+                .project h3 {
+                    font-size: 1.2em;
+                    /* Smaller heading on small screens */
+                }
+
+                .project p {
+                    font-size: 0.8em;
+                    /* Smaller text on small screens */
+                }
+
+                .project a {
+                    font-size: 0.9em;
+                    /* Smaller link text */
                 }
             }
         </style>
