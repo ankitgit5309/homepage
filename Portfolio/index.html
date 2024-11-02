@@ -220,105 +220,65 @@
             background-color: rgb(158, 87, 225) display
         }
 
-        footer {
-            background-color: rgb(45, 15, 45);
-        }
 
-        .footer {
-            display: flex;
-            margin: 23px 122px;
-            justify-content: space-evenly;
-        }
 
-        .footer ul {
-            list-style: none;
-        }
-
-        .footer>div {
-            width: 125px;
-        }
-
-        footer .footer-rights {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
-
-        footer .footer-third {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
-
-        ul li a {
-            text-decoration: none;
-            color: white;
-            /* This will make the text white */
-        }
-
-        ul li a:hover {
-            color: #a6a6a6;
-            /* Optional: Change hover color if you want */
-        }
-
-       
         @media (max-width: 1200px) {
-                .skills-grid {
-                    grid-template-columns: repeat(3, 1fr);
-                    /* 3 items per row */
-                }
-
-                .icon {
-                    width: 60px;
-                    /* Smaller icons */
-                    height: 60px;
-                }
-
-                progress {
-                    width: 120px;
-                    /* Smaller progress bar */
-                }
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+                /* 3 items per row */
             }
 
-            @media (max-width: 768px) {
-                .skills-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                    /* 2 items per row */
-                    gap: 20px;
-                    /* Reduce space between items */
-                }
-
-                .icon {
-                    width: 50px;
-                    /* Even smaller icons */
-                    height: 50px;
-                }
-
-                progress {
-                    width: 100px;
-                    /* Smaller progress bar */
-                }
+            .icon {
+                width: 60px;
+                /* Smaller icons */
+                height: 60px;
             }
 
-            @media (max-width: 480px) {
-                .skills-grid {
-                    grid-template-columns: 1fr;
-                    /* 1 item per row */
-                    gap: 10px;
-                    /* Minimal space between items */
-                }
-
-                .icon {
-                    width: 40px;
-                    /* Smallest icons */
-                    height: 40px;
-                }
-
-                progress {
-                    width: 80px;
-                    /* Smallest progress bar */
-                }
+            progress {
+                width: 120px;
+                /* Smaller progress bar */
             }
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 items per row */
+                gap: 20px;
+                /* Reduce space between items */
+            }
+
+            .icon {
+                width: 50px;
+                /* Even smaller icons */
+                height: 50px;
+            }
+
+            progress {
+                width: 100px;
+                /* Smaller progress bar */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+                /* 1 item per row */
+                gap: 10px;
+                /* Minimal space between items */
+            }
+
+            .icon {
+                width: 40px;
+                /* Smallest icons */
+                height: 40px;
+            }
+
+            progress {
+                width: 80px;
+                /* Smallest progress bar */
+            }
+        }
     </style>
 </head>
 
@@ -428,164 +388,163 @@
                 </div>
             </div>
         </section>
-        <style>.secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
+        <style>
+            .secondSection {
+                max-width: 80vw;
+                margin: auto;
+                height: 80vh;
+            }
 
-        .secondSection h1 {
-            font-size: 1.9rem;
-        }
+            .secondSection h1 {
+                font-size: 1.9rem;
+            }
 
-        .secondSection .box {
-            background: white;
-            width: 75vw;
-            height: 1px;
-            margin: 56px 0;
-            display: flex;
-            justify-content: space-evenly;
-            position: relative;
-        }
+            .secondSection .box {
+                background: white;
+                width: 75vw;
+                height: 1px;
+                margin: 56px 0;
+                display: flex;
+                justify-content: space-evenly;
+                position: relative;
+            }
 
-        .secondSection .vertical {
-            height: 95px;
-            width: 1px;
-            background-color: white;
-            margin-top: -25px;
-        }
+            .secondSection .vertical {
+                height: 95px;
+                width: 1px;
+                background-color: white;
+                margin-top: -25px;
+            }
 
-        .image-top {
-            width: 23px;
-            position: relative;
-            top: -32px;
-            left: -1px;
-        }
-
-
-        .box {
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-start;
-        }
-
-        .vertical-title {
-            font-weight: bold;
-            margin-bottom: -66px;
-            top: 75px;
-            width: 150px;
-        }
+            .image-top {
+                width: 23px;
+                position: relative;
+                top: -32px;
+                left: -1px;
+            }
 
 
+            .box {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+            }
 
-        .Vertical-desc {
+            .vertical-title {
+                font-weight: bold;
+                margin-bottom: -66px;
+                top: 75px;
+                width: 150px;
+            }
 
-            position: relative;
-            top: 86px;
-            color: gray;
-            width: 150px;
-            font-size: 9px;
-        }
 
-        .work-item .vertical {
-            background-color: rgb(158, 87, 225) display
-        }
 
-        footer {
-            background-color: rgb(45, 15, 45);
-        }
+            .Vertical-desc {
 
-        .footer {
-            display: flex;
-            margin: 23px 122px;
-            justify-content: space-evenly;
-        }
+                position: relative;
+                top: 86px;
+                color: gray;
+                width: 150px;
+                font-size: 9px;
+            }
 
-        .footer ul {
-            list-style: none;
-        }
+            .work-item .vertical {
+                background-color: rgb(158, 87, 225) display
+            }
 
-        .footer>div {
-            width: 125px;
-        }
+            footer {
+                background-color: rgb(45, 15, 45);
+            }
 
-        footer .footer-rights {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
+            .footer {
+                display: flex;
+                margin: 23px 122px;
+                justify-content: space-evenly;
+            }
 
-        footer .footer-third {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
+            .footer ul {
+                list-style: none;
+            }
 
-        ul li a {
-            text-decoration: none;
-            color: white;
-            /* This will make the text white */
-        }
+            .footer>div {
+                width: 125px;
+            }
 
-        ul li a:hover {
-            color: #a6a6a6;
-            /* Optional: Change hover color if you want */
-        }
+            footer .footer-rights {
+                text-align: center;
+                color: gray;
+                padding: 12px 0;
+            }
 
-        .thirdSection {
-            /*background:#10103a;*/
-            margin-left: 84px;
-            /*Moves the content of third section to match the left margin*/
-            margin-top: -20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-        }
+            footer .footer-third {
+                text-align: center;
+                color: gray;
+                padding: 12px 0;
+            }
 
-        .thick-line {
-            border: 0;
-            /* Remove default border */
-            height: 1.4px;
-            /* Increase the thickness of the line */
-            background-color: white;
-            /* Color of the line */
-            margin: 60px 80px;
-            /* Adjust spacing around the line */
-            width: 90%;
-            /* Adjust the width of the line */
-        }
+            ul li a {
+                text-decoration: none;
+                color: white;
+                /* This will make the text white */
+            }
 
-        .rightSection {
-            align-self: flex-start;
-            margin: 0;
-            padding-top: 0;
-        }
+            ul li a:hover {
+                color: #a6a6a6;
+                /* Optional: Change hover color if you want */
+            }
 
-        .leftsection {
-            width: 50%;
-            font-size: 2.5rem;
-            margin: 70px 0;
+            .thirdSection {
+                /*background:#10103a;*/
+                margin-left: 84px;
+                /*Moves the content of third section to match the left margin*/
+                margin-top: -20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+            }
 
-        }
+            .thick-line {
+                border: 0;
+                /* Remove default border */
+                height: 1.4px;
+                /* Increase the thickness of the line */
+                background-color: white;
+                /* Color of the line */
+                margin: 60px 80px;
+                /* Adjust spacing around the line */
+                width: 90%;
+                /* Adjust the width of the line */
+            }
 
-        .description {
-            font: 18px;
-            line-height: 1.6;
-            margin-top: -194px;
-            padding-top: -20px;
-            margin-left: -465px;
-        }
+            .rightSection {
+                align-self: flex-start;
+                margin: 0;
+                padding-top: 0;
+            }
 
-        .leftSection img {
-            width: 350px;
-            height: auto;
-            margin: 10px 0;
-            margin-left: 50;
-        }
-       
+            .leftsection {
+                width: 50%;
+                font-size: 2.5rem;
+                margin: 70px 0;
 
-</style>
+            }
+
+            .description {
+                font: 18px;
+                line-height: 1.6;
+                margin-top: -194px;
+                padding-top: -20px;
+                margin-left: -465px;
+            }
+
+            .leftSection img {
+                width: 350px;
+                height: auto;
+                margin: 10px 0;
+                margin-left: 50;
+            }
+        </style>
         <section class="thirdSection">
             <div class="leftSection">
                 <img src="jerry.png" alt="Ankit's image">
@@ -603,89 +562,98 @@
             </div>
 
         </section>
-        <style> 
-        .thirdSection {
-            margin-left: 84px;
-            gap: 20px;
-            margin-top: -20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-        }
+        <style>
+            .thirdSection {
+                margin-left: 84px;
+                gap: 20px;
+                margin-top: -20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+            }
 
-        .thirdsection.thick-line {
-            border: 0;
-            /* Remove default border */
-            height: 1.4px;
-            /* Increase the thickness of the line */
-            background-color: white;
-            /* Color of the line */
-            margin: 60px 80px;
-            /* Adjust spacing around the line */
-            width: 90%;
-            /* Adjust the width of the line */
-        }
+            .thirdsection.thick-line {
+                border: 0;
+                /* Remove default border */
+                height: 1.4px;
+                /* Increase the thickness of the line */
+                background-color: white;
+                /* Color of the line */
+                margin: 60px 80px;
+                /* Adjust spacing around the line */
+                width: 90%;
+                /* Adjust the width of the line */
+            }
 
-        .thirdsection.rightSection {
-            flex: 2 1 400px;
-            max-width: 300px;
-            margin: 10px;
-        }
+            .thirdsection.rightSection {
+                flex: 2 1 400px;
+                max-width: 300px;
+                margin: 10px;
+            }
 
-        .thirdsection.leftsection {
-            flex: 1 1 300px;
-            max-width: 300px;
-            margin: 10px 0;
+            .thirdsection.leftsection {
+                flex: 1 1 300px;
+                max-width: 300px;
+                margin: 10px 0;
 
-        }
+            }
 
-        .thirdsection.description {
-            font: 18px;
-            line-height: 1.6;
-            margin-top: -194px;
-            padding-top: -20px;
-            margin-left: -465px;
-        }
+            .thirdsection.description {
+                font: 18px;
+                line-height: 1.6;
+                margin-top: -194px;
+                padding-top: -20px;
+                margin-left: -465px;
+            }
 
-        .thirdSection.leftSection img {
-            width: 100%; /* Makes the image responsive */
-            height: auto;
-        }
-        .thirdsection.thirdSection h1 {
-            font-size: 1.9rem;
-        text-decoration: underline;
-        margin-bottom: 10px;
+            .thirdSection.leftSection img {
+                width: 100%;
+                /* Makes the image responsive */
+                height: auto;
+            }
 
-        }
-        
-        @media (max-width: 768px) {
-        .thirdSection {
-            flex-direction: column;
-            align-items: center; /* Centers content on small screens */
-            text-align: center; /* Centers text on small screens */
-        }
+            .thirdsection.thirdSection h1 {
+                font-size: 1.9rem;
+                text-decoration: underline;
+                margin-bottom: 10px;
 
-        .leftSection, .rightSection {
-            max-width: 100%; /* Full width on smaller screens */
-            text-align: center;
-        }
+            }
 
-        .description {
-            margin: 0; /* Reset margins */
-        }
-    }
+            @media (max-width: 768px) {
+                .thirdSection {
+                    flex-direction: column;
+                    align-items: center;
+                    /* Centers content on small screens */
+                    text-align: center;
+                    /* Centers text on small screens */
+                }
 
-    @media (max-width: 480px) {
-        .thirdSection h1 {
-            font-size: 1.5rem; /* Smaller heading */
-        }
+                .leftSection,
+                .rightSection {
+                    max-width: 100%;
+                    /* Full width on smaller screens */
+                    text-align: center;
+                }
 
-        .description p {
-            font-size: 16px; /* Slightly smaller text */
-        }
-    }
-</style>
+                .description {
+                    margin: 0;
+                    /* Reset margins */
+                }
+            }
+
+            @media (max-width: 480px) {
+                .thirdSection h1 {
+                    font-size: 1.5rem;
+                    /* Smaller heading */
+                }
+
+                .description p {
+                    font-size: 16px;
+                    /* Slightly smaller text */
+                }
+            }
+        </style>
 
         <hr class="thick-line"> <!--Defining a divider line between the third and fourt section-->
         <section class="skills-section">
@@ -913,6 +881,7 @@
             .project a:hover {
                 text-decoration: underline;
             }
+
             @media (max-width: 1200px) {
                 .skills-grid {
                     grid-template-columns: repeat(3, 1fr);
@@ -1057,61 +1026,95 @@
             www.ankitsportfolio.com | All rights reserved©.
         </div>
         <style>
-            @media (max-width: 1200px) {
-                .skills-grid {
-                    grid-template-columns: repeat(3, 1fr);
-                    /* 3 items per row */
-                }
-
-                .icon {
-                    width: 60px;
-                    /* Smaller icons */
-                    height: 60px;
-                }
-
-                progress {
-                    width: 120px;
-                    /* Smaller progress bar */
-                }
+            footer {
+                background-color: rgb(45, 15, 45);
+                color: white;
             }
 
+            .footer {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 20px;
+                margin: 0 40px;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .footer>div,
+            .footer ul {
+                flex: 1;
+                min-width: 120px;
+                /* Ensures each section has some width */
+            }
+
+
+            footer .footer-rights {
+                text-align: center;
+                color: gray;
+                padding: 12px 0;
+            }
+
+            footer .footer-third {
+                text-align: center;
+                color: gray;
+                padding: 12px 0;
+            }
+
+            .footer ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .footer ul li {
+                margin: 8px 0;
+            }
+
+            .footer ul li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .footer ul li a:hover {
+                color: #a6a6a6;
+            }
+
+            .footer-rights {
+                text-align: center;
+                color: gray;
+                padding: 12px 0;
+            }
+
+            /* Responsive Design */
             @media (max-width: 768px) {
-                .skills-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                    /* 2 items per row */
-                    gap: 20px;
-                    /* Reduce space between items */
+                .footer {
+                    flex-direction: column;
+                    /* Stacks sections vertically */
+                    align-items: center;
+                    margin: 20px;
                 }
 
-                .icon {
-                    width: 50px;
-                    /* Even smaller icons */
-                    height: 50px;
+                .footer>div,
+                .footer ul {
+                    text-align: center;
                 }
 
-                progress {
-                    width: 100px;
-                    /* Smaller progress bar */
+                .footer ul {
+                    padding: 0;
+                    margin: 10px 0;
+                }
+
+                .footer ul li {
+                    margin: 6px 0;
                 }
             }
 
             @media (max-width: 480px) {
-                .skills-grid {
-                    grid-template-columns: 1fr;
-                    /* 1 item per row */
-                    gap: 10px;
-                    /* Minimal space between items */
+                footer {
+                    padding: 10px;
                 }
 
-                .icon {
-                    width: 40px;
-                    /* Smallest icons */
-                    height: 40px;
-                }
-
-                progress {
-                    width: 80px;
-                    /* Smallest progress bar */
+                .footer ul li {
+                    font-size: 0.9em;
                 }
             }
         </style>
