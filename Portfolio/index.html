@@ -312,7 +312,6 @@
             margin: 10px 0;
             margin-left: 50;
         }
-
         .thirdSection h1 {
             font-size: 1.9rem;
             text-decoration: underline;
@@ -488,6 +487,220 @@
                 </div>
             </div>
         </section>
+        <style>.secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 75vw;
+            height: 1px;
+            margin: 56px 0;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+        }
+
+        .secondSection .vertical {
+            height: 95px;
+            width: 1px;
+            background-color: white;
+            margin-top: -25px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -1px;
+        }
+
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .vertical-title {
+            font-weight: bold;
+            margin-bottom: -66px;
+            top: 75px;
+            width: 150px;
+        }
+
+
+
+        .Vertical-desc {
+
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .work-item .vertical {
+            background-color: rgb(158, 87, 225) display
+        }
+
+        footer {
+            background-color: rgb(45, 15, 45);
+        }
+
+        .footer {
+            display: flex;
+            margin: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 125px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        footer .footer-third {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            /* This will make the text white */
+        }
+
+        ul li a:hover {
+            color: #a6a6a6;
+            /* Optional: Change hover color if you want */
+        }
+
+        .thirdSection {
+            /*background:#10103a;*/
+            margin-left: 84px;
+            /*Moves the content of third section to match the left margin*/
+            margin-top: -20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .thick-line {
+            border: 0;
+            /* Remove default border */
+            height: 1.4px;
+            /* Increase the thickness of the line */
+            background-color: white;
+            /* Color of the line */
+            margin: 60px 80px;
+            /* Adjust spacing around the line */
+            width: 90%;
+            /* Adjust the width of the line */
+        }
+
+        .rightSection {
+            align-self: flex-start;
+            margin: 0;
+            padding-top: 0;
+        }
+
+        .leftsection {
+            width: 50%;
+            font-size: 2.5rem;
+            margin: 70px 0;
+
+        }
+
+        .description {
+            font: 18px;
+            line-height: 1.6;
+            margin-top: -194px;
+            padding-top: -20px;
+            margin-left: -465px;
+        }
+
+        .leftSection img {
+            width: 350px;
+            height: auto;
+            margin: 10px 0;
+            margin-left: 50;
+        }
+        @media (max-width: 1200px) {
+                .skills-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                    /* 3 items per row */
+                }
+
+                .icon {
+                    width: 60px;
+                    /* Smaller icons */
+                    height: 60px;
+                }
+
+                progress {
+                    width: 120px;
+                    /* Smaller progress bar */
+                }
+            }
+
+            @media (max-width: 768px) {
+                .skills-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                    /* 2 items per row */
+                    gap: 20px;
+                    /* Reduce space between items */
+                }
+
+                .icon {
+                    width: 50px;
+                    /* Even smaller icons */
+                    height: 50px;
+                }
+
+                progress {
+                    width: 100px;
+                    /* Smaller progress bar */
+                }
+            }
+
+            @media (max-width: 480px) {
+                .skills-grid {
+                    grid-template-columns: 1fr;
+                    /* 1 item per row */
+                    gap: 10px;
+                    /* Minimal space between items */
+                }
+
+                .icon {
+                    width: 40px;
+                    /* Smallest icons */
+                    height: 40px;
+                }
+
+                progress {
+                    width: 80px;
+                    /* Smallest progress bar */
+                }
+            }
+
+</style>
         <section class="thirdSection">
             <div class="leftSection">
                 <img src="jerry.png" alt="Ankit's image">
